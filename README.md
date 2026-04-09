@@ -36,7 +36,7 @@ The application uses a mock API to fetch initial task data and performs CRUD ope
 * Fetch API
 * JSON Placeholder (Mock API)
 
----
+```
 
 ## Project Structure
 
@@ -45,7 +45,7 @@ task-dashboard/
 │── style.css
 │── script.js
 
----
+```
 
 # Day-wise Progress & Commits
 
