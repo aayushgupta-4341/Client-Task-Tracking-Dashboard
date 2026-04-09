@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Learn JavaScript",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "text": "Build Task Dashboard",
+      "completed": true
+    },
+    {
+      "text": "learning mern stack",
+      "completed": false,
+      "id": "my1GpYwlRHM"
+    },
+    {
+      "text": "learning python",
+      "completed": false,
+      "id": "q1DicBCRYpM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

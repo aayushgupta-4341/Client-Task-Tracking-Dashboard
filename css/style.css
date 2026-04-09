@@ -1,0 +1,14 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btn-all,
+.btn-pending,
+.btn-completed {
+    margin-right: 5px;
+}
