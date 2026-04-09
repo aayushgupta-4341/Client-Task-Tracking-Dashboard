@@ -40,10 +40,20 @@ The application uses a mock API to fetch initial task data and performs CRUD ope
 
 ## Project Structure
 
-task-dashboard/
-│── index.html
-│── style.css
-│── script.js
+client task tracking dashboard/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── app.js
+│   └── api.js
+│
+├── assets/
+│
+└── README.md
 
 ```
 
