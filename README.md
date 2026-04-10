@@ -58,11 +58,71 @@ client task tracking dashboard/
 ```
 
 # Day-wise Progress & Commits
+---
+## Day 1 – Project Setup (07 April 2026)
 
-## Day 1 (07 April)
+- Created project folder structure
+- Added index.html, style.css, script.js
+- Wrote basic HTML skeleton (head, body, title)
 
-* Project setup
-* Created basic HTML structure
+Status: Completed
+---
+---
+## Day 2 – UI Layout (08 April 2026)
+
+- Added Bootstrap CDN
+- Designed layout using Bootstrap
+- Created task input form and filter buttons
+- Ensured basic responsiveness
+
+Status: Completed
+---
+## Day 2 – UI Layout (08 April 2026)
+
+- Added Bootstrap CDN
+- Designed layout using Bootstrap
+- Created task input form and filter buttons
+- Ensured basic responsiveness
+
+Status: Completed
+---
+## Day 3 – DOM Setup (09 April 2026)
+
+- Selected elements using getElementById and querySelector
+- Structured JavaScript file
+- Prepared base functions for further implementation
+
+Status: Completed
+---
+## Day 4 – Task Rendering (10 April 2026)
+
+- Created displayTasks() function
+- Rendered tasks dynamically using JavaScript
+- Used innerHTML to update UI
+
+Status: Completed
+---
+
+---
+---
+
+---
+---
+
+---
+---
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
 
 **Commit Message:**
 `Initial project setup with basic HTML structure`
