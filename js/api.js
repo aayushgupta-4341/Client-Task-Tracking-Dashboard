@@ -1,32 +1,45 @@
-const BASE_URL = "http://localhost:3000/tasks";
+// This file handles all the API calls
+// I am using JSON Server as a fake backend running on port 3000
 
-// GET all tasks
-async function fetchTasks() {
-    const res = await fetch(BASE_URL);
-    return res.json();
-}
+var API_URL = "http://localhost:3000/tasks";
 
-// ADD task
-async function createTask(task) {
-    await fetch(BASE_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(task)
+// Get all tasks from the server
+function getAllTasks() {
+  return fetch(API_URL)
+    .then(function(response) {
+      return response.json();
     });
 }
 
-// UPDATE task
-async function updateTask(id, updatedTask) {
-    await fetch(`${BASE_URL}/${id}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(updatedTask)
-    });
+// Add a new task - sending data as POST request
+function addTask(taskData) {
+  return fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(taskData)
+  }).then(function(response) {
+    return response.json();
+  });
 }
 
-// DELETE task
-async function removeTask(id) {
-    await fetch(`${BASE_URL}/${id}`, {
-        method: "DELETE"
-    });
+// Update only the status field of a task using PATCH
+function updateTaskStatus(taskId, newStatus) {
+  return fetch(API_URL + "/" + taskId, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ status: newStatus })
+  }).then(function(response) {
+    return response.json();
+  });
+}
+
+// Delete a task by its id
+function deleteTask(taskId) {
+  return fetch(API_URL + "/" + taskId, {
+    method: "DELETE"
+  });
 }
