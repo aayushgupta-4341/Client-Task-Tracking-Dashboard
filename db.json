@@ -2,23 +2,27 @@
   "tasks": [
     {
       "id": "1",
-      "text": "Learn JavaScript",
-      "completed": false
+      "title": "Learning MERN",
+      "description": "Understanding the basics of MongoDB, Express.js, React.js, and Node.js",
+      "status": "pending"
     },
     {
       "id": "2",
-      "text": "Build Task Dashboard",
-      "completed": true
+      "title": "Completing Client Task Tracking Dashboard",
+      "description": "Building the project UI and pushing the first commit to GitHub",
+      "status": "completed"
     },
     {
-      "text": "learning mern stack",
-      "completed": false,
-      "id": "my1GpYwlRHM"
+      "id": "3",
+      "title": "API Integration Practice",
+      "description": "Learning how to use Fetch API to perform GET and POST requests",
+      "status": "pending"
     },
     {
-      "text": "learning python",
-      "completed": false,
-      "id": "q1DicBCRYpM"
+      "id": "4",
+      "title": "JavaScript Revision",
+      "description": "Revising variables, functions, and DOM manipulation concepts",
+      "status": "completed"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
