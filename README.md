@@ -119,11 +119,12 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 
 ---
 
-Day 6 – Add Task (12 April 2026)
-Implemented Add Task functionality
-Added input validation
+### Day 6 – Add Task (12 April 2026)
 
-Commit: Implemented add task functionality with validation
+* Implemented Add Task functionality
+* Added input validation
+
+**Commit:** `Implemented add task functionality with validation`
 
 ---
 
