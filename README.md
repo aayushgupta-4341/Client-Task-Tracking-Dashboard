@@ -131,7 +131,7 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 * Added toggle functionality (Pending ↔ Completed)
 * Updated UI dynamically
 
-**Commit:** Added task status update functionality
+**Commit:** `Added task status update functionality`
 
 ---
 
