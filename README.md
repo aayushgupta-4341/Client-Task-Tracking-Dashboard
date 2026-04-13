@@ -128,8 +128,8 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 
 ---
 ### Day 7 – Update Task Status (13 April 2026)
-Added toggle functionality (Pending ↔ Completed)
-Updated UI dynamically
+* Added toggle functionality (Pending ↔ Completed)
+* Updated UI dynamically
 
 Commit: Added task status update functionality
 
