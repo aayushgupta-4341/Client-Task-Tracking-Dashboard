@@ -127,7 +127,7 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 **Commit:** `Implemented add task functionality with validation`
 
 ---
-Day 7 – Update Task Status (13 April 2026)
+### Day 7 – Update Task Status (13 April 2026)
 Added toggle functionality (Pending ↔ Completed)
 Updated UI dynamically
 
