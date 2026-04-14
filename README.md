@@ -139,7 +139,7 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 * Implemented delete functionality
 * Updated UI after deletion
 
-Commit: Implemented delete task functionality
+**Commit:** Implemented delete task functionality
 
 ---
 
