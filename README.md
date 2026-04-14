@@ -136,8 +136,8 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 ---
 
 ### Day 8 – Delete Task (14 April 2026)
-Implemented delete functionality
-Updated UI after deletion
+* Implemented delete functionality
+* Updated UI after deletion
 
 Commit: Implemented delete task functionality
 
