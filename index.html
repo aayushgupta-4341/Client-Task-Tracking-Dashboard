@@ -24,7 +24,6 @@
   <div class="container">
 
     <!-- Stats Section -->
-    <!-- These numbers update automatically using JavaScript -->
     <div class="row mb-4">
       <div class="col-4">
         <div class="stats-box total">
@@ -57,7 +56,6 @@
           class="form-control"
           placeholder="Enter task title..."
         />
-        <!-- This error text shows if the user submits without a title -->
         <span class="error-msg" id="titleError">Title cannot be empty!</span>
       </div>
 
@@ -75,9 +73,9 @@
 
     <!-- Filter Buttons -->
     <div class="filter-section">
-      <button class="filter-btn active" id="btn-all"       onclick="filterTasks('all')">All</button>
-      <button class="filter-btn"        id="btn-pending"   onclick="filterTasks('pending')">Pending</button>
-      <button class="filter-btn"        id="btn-completed" onclick="filterTasks('completed')">Completed</button>
+      <button class="filter-btn active" id="btn-all" onclick="filterTasks('all')">All</button>
+      <button class="filter-btn" id="btn-pending" onclick="filterTasks('pending')">Pending</button>
+      <button class="filter-btn" id="btn-completed" onclick="filterTasks('completed')">Completed</button>
     </div>
 
     <!-- Task cards will be shown here by JavaScript -->
