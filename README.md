@@ -135,6 +135,14 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 
 ---
 
+Day 7 – Update Task Status (13 April 2026)
+Added toggle functionality (Pending ↔ Completed)
+Updated UI dynamically
+
+Commit: Added task status update functionality
+
+---
+
 ## API Details
 
 * **API Used:** JSONPlaceholder
