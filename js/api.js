@@ -1,45 +1,60 @@
-// This file handles all the API calls
-// I am using JSON Server as a fake backend running on port 3000
+// Using JSONPlaceholder as online mock API
+// This works on Vercel because it is always online
+var API_URL = "https://jsonplaceholder.typicode.com/todos";
 
-var API_URL = "http://localhost:3000/tasks";
-
-// Get all tasks from the server
+// GET - fetch first 10 tasks on page load
 function getAllTasks() {
-  return fetch(API_URL)
-    .then(function(response) {
-      return response.json();
+  return fetch(API_URL + "?_limit=10").then(function(res) {
+    return res.json();
+  }).then(function(data) {
+    // JSONPlaceholder returns "completed: true/false"
+    // We convert it to "status: pending/completed" for our app
+    return data.map(function(item) {
+      return {
+        id: item.id,
+        title: item.title,
+        description: "",
+        status: item.completed ? "completed" : "pending"
+      };
     });
+  });
 }
 
-// Add a new task - sending data as POST request
-function addTask(taskData) {
+// POST - JSONPlaceholder accepts POST but does not save it
+// We just return a fake saved task so our app logic works
+function addTask(data) {
   return fetch(API_URL, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(taskData)
-  }).then(function(response) {
-    return response.json();
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  }).then(function(res) {
+    return res.json();
+  }).then(function(saved) {
+    // Return the task with our format
+    return {
+      id: Date.now(),
+      title: data.title,
+      description: data.description,
+      status: "pending"
+    };
   });
 }
 
-// Update only the status field of a task using PATCH
-function updateTaskStatus(taskId, newStatus) {
-  return fetch(API_URL + "/" + taskId, {
+// PATCH - JSONPlaceholder accepts but does not save
+// We just resolve so our local array update works
+function updateTaskStatus(id, status) {
+  return fetch(API_URL + "/" + id, {
     method: "PATCH",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ status: newStatus })
-  }).then(function(response) {
-    return response.json();
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ status: status })
+  }).then(function(res) {
+    return res.json();
   });
 }
 
-// Delete a task by its id
-function deleteTask(taskId) {
-  return fetch(API_URL + "/" + taskId, {
+// DELETE - JSONPlaceholder accepts but does not save
+function deleteTask(id) {
+  return fetch(API_URL + "/" + id, {
     method: "DELETE"
   });
 }
