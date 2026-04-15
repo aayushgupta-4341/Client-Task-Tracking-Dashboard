@@ -12,7 +12,7 @@ window.onload = function() {
   loadAllTasks();
 };
 
-// ---- Load Tasks from Server --------------------------------
+// Load Tasks from Server
 
 function loadAllTasks() {
   getAllTasks()
@@ -26,7 +26,7 @@ function loadAllTasks() {
     });
 }
 
-// ---- Display Tasks on the Page -----------------------------
+// Display Tasks on the Page
 
 function showTasks() {
   var container = document.getElementById("taskContainer");
@@ -91,7 +91,7 @@ function createTaskCard(task) {
   return card;
 }
 
-// ---- Add Task ----------------------------------------------
+// Add Task
 
 function submitTask() {
   var titleInput = document.getElementById("titleInput");
@@ -135,7 +135,7 @@ function submitTask() {
     });
 }
 
-// ---- Toggle Task Status ------------------------------------
+// Toggle Task Status
 
 function toggleStatus(taskId, currentStatus) {
   // Flip the status
@@ -161,7 +161,7 @@ function toggleStatus(taskId, currentStatus) {
     });
 }
 
-// ---- Delete Task -------------------------------------------
+// Delete Task 
 
 function removeTask(taskId) {
   var userConfirmed = window.confirm("Are you sure you want to delete this task?");
@@ -204,7 +204,7 @@ function filterTasks(filterType) {
   showTasks();
 }
 
-// ---- Update Count Numbers at the Top -----------------------
+// Update Count Numbers at the Top
 
 function updateCounts() {
   var total     = taskList.length;
