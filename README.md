@@ -146,7 +146,7 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 * Added filter options (All / Pending / Completed)
 * Improved UI styling
 
-**Commit:** Added task filtering and improved UI
+**Commit:** `Added task filtering and improved UI`
 ---
 
 ## API Details
