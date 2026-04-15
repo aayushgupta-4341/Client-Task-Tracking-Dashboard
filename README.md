@@ -142,7 +142,7 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 **Commit:** `Implemented delete task functionality`
 
 ---
-Day 9 – Filter & UI Improvements (15 April 2026)
+### Day 9 – Filter & UI Improvements (15 April 2026)
 Added filter options (All / Pending / Completed)
 Improved UI styling
 
