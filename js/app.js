@@ -1,7 +1,6 @@
 // Main file - all the UI logic is written here
 // I am storing tasks in this array so I don't have to
 // call the API every single time I need to show something
-
 var taskList = [];
 
 // This keeps track of which filter button is active
@@ -200,7 +199,7 @@ function filterTasks(filterType) {
 
 // Update Count Numbers at the Top
 function updateCounts() {
-  var total     = taskList.length;
+  var total = taskList.length;
   var completed = 0;
   var pending   = 0;
 
@@ -212,7 +211,7 @@ function updateCounts() {
     }
   }
   
-  document.getElementById("totalCount").innerText     = total;
-  document.getElementById("pendingCount").innerText   = pending;
+  document.getElementById("totalCount").innerText = total;
+  document.getElementById("pendingCount").innerText = pending;
   document.getElementById("completedCount").innerText = completed;
 }
