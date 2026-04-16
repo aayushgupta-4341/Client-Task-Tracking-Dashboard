@@ -7,11 +7,11 @@
 
 ## Project Overview
 
-This project is a **Task Tracking Dashboard** developed as part of a Full Stack Web Development Internship.
+This project is a Task Tracking Dashboard developed as part of a Full Stack Web Development Internship.
 
-The goal was to build a simple and structured web application that allows users to efficiently manage daily tasks — including adding, updating, deleting, and filtering them.
+The goal was to build a simple and structured web application that allows users to efficiently manage daily tasks, including adding, updating, deleting, and filtering them.
 
-On initial load, task data is fetched from a **mock API (JSONPlaceholder)**. All further operations (CRUD) are handled on the frontend using JavaScript, without any real backend or database.
+On initial load, task data is fetched from a mock API (JSONPlaceholder). All further CRUD operations are handled on the frontend using JavaScript without any real backend or database.
 
 ---
 
@@ -26,22 +26,22 @@ On initial load, task data is fetched from a **mock API (JSONPlaceholder)**. All
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-| Technology       | Purpose                              |
-| ---------------- | ------------------------------------ |
-| HTML5            | Structure of the application         |
-| CSS3             | Styling and layout                   |
-| Bootstrap 5      | Responsive design                    |
-| JavaScript (ES6) | Application logic & DOM manipulation |
-| Fetch API        | API integration                      |
-| JSONPlaceholder  | Mock API for task data               |
+| Technology       | Purpose                                |
+| ---------------- | -------------------------------------- |
+| HTML5            | Structure of the application           |
+| CSS3             | Styling and layout                     |
+| Bootstrap 5      | Responsive design                      |
+| JavaScript (ES6) | Application logic and DOM manipulation |
+| Fetch API        | API integration                        |
+| JSONPlaceholder  | Mock API for task data                 |
 
 ---
 
 ## Project Structure
 
-```
+```text
 client-Task-Tracking-Dashboard/
 ├── index.html
 ├── css/
@@ -56,18 +56,24 @@ client-Task-Tracking-Dashboard/
 
 ---
 
-## ⚙️ How to Run Locally
+## How to Run Locally
 
-1. Download or clone the repository
-2. Open the folder in VS Code
-3. Install **Live Server** extension (if not installed)
-4. Right-click `index.html` → Open with Live Server
+1. Clone the repository:
 
-> ⚠️ Internet connection required (Bootstrap + API via CDN)
+```bash
+git clone https://github.com/aayushgupta-4341/Client-Task-Tracking-Dashboard.git
+```
+
+2. Open the project folder in VS Code
+3. Install the Live Server extension (if not already installed)
+4. Right-click on `index.html`
+5. Select `Open with Live Server`
+
+> Internet connection is required because Bootstrap and JSONPlaceholder are loaded through CDN.
 
 ---
 
-## 📆 Development Timeline
+## Development Timeline
 
 ### Day 1 – Project Setup (07 April 2026)
 
@@ -113,7 +119,7 @@ client-Task-Tracking-Dashboard/
 * Loaded initial tasks from API
 
 **API Endpoint:**
-https://jsonplaceholder.typicode.com/todos?_limit=10
+`https://jsonplaceholder.typicode.com/todos?_limit=10`
 
 **Commit:** `Integrated API and fetched initial task data`
 
@@ -127,7 +133,9 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 **Commit:** `Implemented add task functionality with validation`
 
 ---
+
 ### Day 7 – Update Task Status (13 April 2026)
+
 * Added toggle functionality (Pending ↔ Completed)
 * Updated UI dynamically
 
@@ -136,26 +144,39 @@ https://jsonplaceholder.typicode.com/todos?_limit=10
 ---
 
 ### Day 8 – Delete Task (14 April 2026)
+
 * Implemented delete functionality
 * Updated UI after deletion
 
 **Commit:** `Implemented delete task functionality`
 
 ---
-### Day 9 – Filter & UI Improvements (15 April 2026)
+
+### Day 9 – Filter and UI Improvements (15 April 2026)
+
 * Added filter options (All / Pending / Completed)
 * Improved UI styling
 
 **Commit:** `Added task filtering and improved UI`
+
+---
+
+### Day 10 – Testing and Deployment (16 April 2026)
+
+* Tested all features
+* Fixed minor bugs
+* Deployed project to Vercel
+
+**Commit:** `Final testing, bug fixes, and project deployment`
+
 ---
 
 ## API Details
 
 * **API Used:** JSONPlaceholder
-* **Endpoint:** https://jsonplaceholder.typicode.com/todos?_limit=10
+* **Endpoint:** `https://jsonplaceholder.typicode.com/todos?_limit=10`
 
-This API provides mock task data for testing.
-Since it does not persist changes, all CRUD operations are handled locally in JavaScript.
+This API provides mock task data for testing purposes. Since it does not persist changes, all add, update, and delete operations are handled locally in JavaScript.
 
 ---
 
@@ -173,20 +194,20 @@ Since it does not persist changes, all CRUD operations are handled locally in Ja
 
 ## Live Demo
 
-👉 (Add your deployment link here)
+[https://client-task-tracking-dashboard.vercel.app/](https://client-task-tracking-dashboard.vercel.app/)
 
 ---
 
 ## GitHub Repository
 
-https://github.com/aayushgupta-4341/Client-Task-Tracking-Dashboard.git
+[https://github.com/aayushgupta-4341/Client-Task-Tracking-Dashboard.git](https://github.com/aayushgupta-4341/Client-Task-Tracking-Dashboard.git)
 
 ---
 
 ## Important Notes
 
 * No real backend or database is used
-* All operations are handled on frontend
+* All operations are handled on the frontend
 * Data resets on page refresh
 * Project focuses on frontend fundamentals
 
@@ -194,6 +215,4 @@ https://github.com/aayushgupta-4341/Client-Task-Tracking-Dashboard.git
 
 ## Internship Context
 
-This project was developed as part of a **Full Stack Web Development Internship (2026)** to simulate a real-world task management scenario using frontend technologies.
-
----
+This project was developed as part of a Full Stack Web Development Internship (2026) to simulate a real-world task management scenario using frontend technologies.
