@@ -199,7 +199,6 @@ function filterTasks(filterType) {
 }
 
 // Update Count Numbers at the Top
-
 function updateCounts() {
   var total     = taskList.length;
   var completed = 0;
@@ -212,7 +211,7 @@ function updateCounts() {
       pending = pending + 1;
     }
   }
-
+  
   document.getElementById("totalCount").innerText     = total;
   document.getElementById("pendingCount").innerText   = pending;
   document.getElementById("completedCount").innerText = completed;
