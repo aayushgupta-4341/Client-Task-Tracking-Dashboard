@@ -13,7 +13,6 @@ window.onload = function() {
 };
 
 // Load Tasks from Server
-
 function loadAllTasks() {
   getAllTasks()
     .then(function(tasks) {
@@ -27,7 +26,6 @@ function loadAllTasks() {
 }
 
 // Display Tasks on the Page
-
 function showTasks() {
   var container = document.getElementById("taskContainer");
   container.innerHTML = "";
